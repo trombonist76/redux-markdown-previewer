@@ -1,38 +1,111 @@
-.App {
+html,body,#root,.App{
+  height: calc(100% - 00px);
+  background-color: #FFCD38;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*{
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+p{
+  margin: 0;
+}
+
+.App{
+  font-family: "Space Mono", monospace;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 0 0 0;
+}
+
+h1{
+  color:#4A4A4A;
+  font-size: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.content > div{
+  width: 45%;
+  height: 90%;
+  box-shadow: 10px 10px #646464;
+  background-color: #FFDD67;
+  font-size: 19px;
+  word-wrap: break-word;
+}
+
+.content > div:last-child{
+  padding: 15px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+textarea{
+  height: 100%;
+  width:100%;
+  padding: 15px;
+  font-size: 19px;
+  resize: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #FFDD67;
+}
+
+.help button{
+  color: #4A4A4A;
+  position: fixed;
+  right: 50px;
+  font-size: 30px;
+  background-color: #ffeeb4;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  box-shadow: 10px 10px #646464;
+  transition: box-shadow 0.2s ease-out;
 }
 
-.App-link {
-  color: #61dafb;
+.help button:hover{
+  box-shadow: 6px 7px #646464;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.help .active{
+  box-shadow: 6px 7px #646464;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffeeb4; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffb703; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffa238;
 }
