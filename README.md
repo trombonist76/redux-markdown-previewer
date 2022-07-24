@@ -6,6 +6,10 @@ This project is a "Markdown Previewer" developed with reactjs
 
 In the project directory, you can run:
 
+### Demo
+
+[Netlify](https://screenmd.netlify.app)
+
 ### `npm start`
 
 Runs the app in the development mode.\
